@@ -1,0 +1,261 @@
+nav {
+  background-color: #101010;
+  position: relative;
+}
+
+nav .navigation {
+  padding: 2.5rem 0;
+  position: relative;
+  z-index: 10;
+  border-bottom: 1px solid #fff;
+  margin: 0 150px;
+
+  @include respond(tab-port-mini) {
+    margin: 0 65px;
+  }
+  @include respond(small-screen) {
+    margin: 0 36px;
+  }
+  @include respond(smaller-screen) {
+    margin: 0 23px;
+  }
+  @include respond(smaller-phones) {
+    margin: 0 7px;
+  }
+}
+
+ul.link-groups {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  font-size: 1.1rem;
+
+  @include respond(tab-land) {
+    gap: 5%;
+    margin-left: 60px;
+  }
+
+  @include respond(tab-port-mini) {
+    margin-left: 0;
+  }
+  @include respond(small-phone) {
+    margin-left: -49px;
+  }
+  @include respond(small-screen) {
+    display: none;
+  }
+}
+
+ul.header-links {
+  @include respond(tab-port-mini) {
+    display: none;
+  }
+}
+
+ul li {
+  list-style: none;
+}
+
+a.headphones {
+  @include respond(phone-port) {
+    height: 493px;
+  }
+  @include respond(phone) {
+    height: 493px;
+  }
+}
+a.speakers {
+  @include respond(phone-port) {
+    height: 450px;
+    width: 327px;
+  }
+  @include respond(phone) {
+    height: 450px;
+    width: 327px;
+  }
+}
+
+a.earphones {
+  @include respond(phone-port) {
+    height: 500px;
+  }
+  @include respond(phone) {
+    height: 500px;
+  }
+}
+
+.checkout-nav {
+  padding: 2.5rem 0;
+  position: relative;
+  z-index: 10;
+  border-bottom: 1px solid #fff;
+  margin: 0 70px;
+}
+
+.checkout {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 160px 68px;
+  height: auto;
+  background-color: #fff;
+  padding: 54px 48px 48px;
+  border-radius: 22px;
+  width: 100%;
+  max-width: 733px;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10%;
+  margin-bottom: 4.4rem;
+}
+
+.middle {
+  width: 115%;
+  height: 55px;
+  /* border: none; */
+  outline: none;
+  border-radius: 8px;
+  font-size: 18px;
+  max-width: 500px;
+  border: 1px solid;
+  border-color: rgb(207, 207, 207);
+  letter-spacing: 0.27px;
+  cursor: auto;
+  padding: 12px;
+  margin-bottom: 1.4rem;
+  margin-top: 0.8rem;
+}
+
+.middle:is(:focus, :valid) {
+  border: 2px solid #d87d4a;
+}
+
+.full {
+  max-width: 615px;
+}
+
+.emoney-information-details {
+  display: flex;
+  gap: 20%;
+}
+
+.payment-wrap {
+  display: flex;
+  gap: 34%;
+}
+
+.payment-method-box {
+  position: relative;
+  left: 32px;
+}
+
+.payment-h3 {
+  color: black;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label.radio {
+  font-size: 0.8rem;
+  position: relative;
+  border: 1px solid #898989;
+  border-radius: 5px;
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  width: 275px;
+  cursor: pointer;
+  color: black;
+}
+
+label.radio::before {
+  content: "";
+  height: 30px;
+  width: 30px;
+  border: 3px solid #d87d4a;
+  @include circle-box;
+  margin-right: 20px;
+}
+
+label.radio::after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  border: none;
+  border-radius: none;
+  background-color: none;
+  position: absolute;
+  left: 29px;
+}
+// input[type="radio"]:checked + label.radio::before {
+//   height: 16px;
+//   width: 16px;
+//   border: 10px solid white;
+//   background-color: #d87d4a;
+// }
+
+input[type="radio"]:checked + label.radio {
+  border: 1px solid #d87d4a;
+}
+
+input[type="radio"]:checked + label.radio::after {
+  border: 3px solid #d87d4a;
+  background-color: #d87d4a;
+  border-radius: 50%;
+}
+
+// .box-bill {
+//   display: flex;
+// }
+
+.cart-title {
+  margin-bottom: 2.4rem;
+}
+
+.box-product {
+  display: flex;
+  gap: 10%;
+  margin-bottom: 2.4rem;
+}
+
+.box-description {
+  display: flex;
+}
+
+.product-description {
+  margin-left: 16px;
+}
+
+.bill-gap {
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pay {
+  background-color: #d87d4a;
+  padding: 20px 100px;
+}
+
+.total-price-box {
+  width: 21%;
+}
+
+.box-summary {
+  background-color: #fff;
+  width: 100%;
+  font-size: 1.2rem;
+  padding-top: 3.4rem;
+}
+
+.summary {
+  width: 100%;
+  max-width: 467px;
+  position: absolute;
+  top: 42%;
+  left: 63%;
+}

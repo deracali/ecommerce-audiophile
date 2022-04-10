@@ -1,0 +1,18 @@
+{
+  "name": "ecommerce-audiophile",
+  "version": "1.0.0",
+  "description": "ecommerce-audiophile-webisite",
+  "main": "index.js",
+  "scripts": {
+   "watch-sass": "sass --watch sass:css",
+    "compile:sass": "sass sass/main.scss:css/style.css",
+    "concat": "concat css/style.css"
+  },
+  "author": "MindOptimizer",
+  "license": "ISC",
+  "dependencies": {
+    "concat": "^1.0.3",
+    "node-sass": "^7.0.1",
+    "npm-run-all": "^4.1.5"
+  }
+}

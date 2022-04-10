@@ -1,0 +1,38 @@
+.you-may-also-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 145px 160px 145px;
+
+  @include respond(laptop-med-large) {
+    margin: 0 110px 160px 110px;
+  }
+  @include respond(laptop-small-large) {
+    margin: 0 90px 160px 90px;
+  }
+  @include respond(tab-land-large) {
+    margin: 0 20px 160px 81px;
+  }
+  @include respond(tab-med-land) {
+    margin: 0 34px 160px 17px;
+  }
+  @include respond(tab) {
+    margin: 0 -6px 160px 4px;
+  }
+  @include respond(tab-deep) {
+    margin: 0 5px 160px 5px;
+  }
+  @include respond(tablet) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.you-may-also-description-box {
+  text-align: center;
+  margin: 1.4rem 0;
+}
+
+.title {
+  margin-bottom: 1.4rem;
+  font-weight: 700;
+}

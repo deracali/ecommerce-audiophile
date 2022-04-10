@@ -1,0 +1,110 @@
+.btn {
+  text-decoration: none;
+  padding: 20px 10px;
+  width: 100%;
+  max-width: 30%;
+  color: #fff;
+  letter-spacing: 1px;
+  outline: none;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  @include respond(tab-med-land) {
+    max-width: 32%;
+  }
+  @include respond(tab-deep-land) {
+    max-width: 34%;
+  }
+  @include respond(tab) {
+    max-width: 37%;
+  }
+  @include respond(tab-port-mini) {
+    max-width: 40%;
+  }
+}
+
+.header-btn {
+  @include respond(tab-port-mini) {
+    margin-left: 149px;
+  }
+  @include respond(small-screen) {
+    margin-left: 118px;
+  }
+  @include respond(smaller-screen) {
+    margin-left: 108px;
+  }
+  @include respond(smaller-phones) {
+    margin-left: 94px;
+  }
+}
+
+.btn-brown {
+  background-color: rgb(216, 125, 74);
+  color: rgb(250, 250, 250);
+}
+
+.btn-brown:hover {
+  background-color: rgb(241, 161, 115);
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+
+  @include respond(small-screen) {
+    padding: 7px;
+  }
+}
+
+.btn-transparent:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.btn-black {
+  background-color: black;
+  color: #fff;
+
+  @include respond(tab-deep) {
+    margin-left: 54px;
+  }
+}
+
+.btn-black:hover {
+  background-color: #484848;
+}
+
+.link-add-to-cart {
+  background-color: #d87d4a;
+  color: #fafafa;
+  border: none;
+  height: 100%;
+
+  @include respond(tab-deep) {
+    max-width: 25%;
+  }
+  @include respond(phone) {
+    margin-left: 240px;
+    max-width: 37%;
+  }
+  @include respond(small-phone) {
+    margin-left: 261px;
+    max-width: 37%;
+  }
+  @include respond(small-screen) {
+    margin-left: 243px;
+    max-width: 39%;
+  }
+}
+
+.link-add-to-cart:hover {
+  background-color: rgb(241, 161, 115);
+}
+
+.checkoutbtn {
+  background-color: #d87d4a;
+  padding: 20px 176px;
+}

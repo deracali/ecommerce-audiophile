@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <script>
+      function img(x) {
+        if (x === 0)
+          document.getElementById("emoney-info").style.display = "flex";
+        else document.getElementById("emoney-info").style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="row">
+      <nav>
+        <div class="checkout-nav  space-between justify-content-between">
+          <a href="/home.html" class="logo">
+            <img src="/Images-for-audo/logo.svg" alt="audiophile logo" />
+          </a>
+          <ul class="header-links link-groups flex-gap">
+            <li class="link-li">
+              <a href="/home.html" id="home" class="link">HOME</a>
+            </li>
+            <li class="link-li">
+              <a href="/headphones.html" id="headphone" class="link"
+                >HEADPHONES</a
+              >
+            </li>
+            <li class="link-li">
+              <a href="/speaker.html" id="speaker" class="link">SPEAKERS</a>
+            </li>
+            <li class="link-li">
+              <a href="/earphone.html" id="earphone" class="link">EARPHONES</a>
+            </li>
+          </ul>
+          <div class="chart">
+            <img src="/Images-for-audo/icon-cart.svg" alt="icon chart" />
+          </div>
+        </div>
+      </nav>
+      <a href="/headphones.html" class="go-back goback-checkout">Go back</a>
+
+      <div class="container">
+            <div class="checkout">
+              <h2 class="chectout-h2">CHECKOUT</h2>
+
+              <div class="billing-details">
+                <h3 class="billing-h3 emoney-margin-bottom checkout-color">
+                  BILLING DETAILS
+                </h3>
+                <!-- <div class="billing-wrapper"> -->
+
+                <div class="flex-wrap">
+                  <div class="group-form">
+                    <div class="label">
+                      <label class="name">Name</label>
+                    </div>
+                    <input
+                      class="middle"
+                      type="text"
+                      placeholder="Chidera Calistus"
+                      name="name"
+                      required
+                    />
+                  </div>
+
+                  <div class="group-form">
+                    <div class="label">
+                      <label class="name">Email</label>
+                    </div>
+                    <input
+                      class="middle"
+                      type="email"
+                      placeholder="chideracalistus00@gmail.com"
+                      name="email"
+                      required
+                    />
+                  </div>
+
+                  <div class="group-form">
+                    <div class="label">
+                      <label class="name">Phone Number</label>
+                    </div>
+                    <input
+                      class="middle"
+                      type="tel"
+                      placeholder="+234(8012345678)"
+                      name="phoneNumber"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="billing-details">
+                <h3 class="billing-h3 emoney-margin-bottom checkout-color">
+                  SHIPPING INFO
+                </h3>
+                <!-- <div class="billing-wrapper"> -->
+
+                <div class="group-form">
+                  <div class="label">
+                    <label class="name">Address</label>
+                  </div>
+                  <input
+                    class="middle full"
+                    type="text"
+                    placeholder="6 saint lorrita Avenue"
+                    name="Address"
+                    required
+                  />
+                </div>
+                <div class="flex-wrap">
+                  <div class="group-form">
+                    <div class="label">
+                      <label class="name">Zip Code</label>
+                    </div>
+                    <input
+                      class="middle"
+                      type="text"
+                      placeholder="10001"
+                      name="zipCode"
+                      required
+                    />
+                  </div>
+
+                  <div class="group-form">
+                    <div class="label">
+                      <label class="name">City</label>
+                    </div>
+                    <input
+                      class="middle"
+                      type="text"
+                      placeholder="Lagos"
+                      name="city"
+                      required
+                    />
+                  </div>
+                  <div class="group-form">
+                    <div class="label">
+                      <label class="name">Country</label>
+                    </div>
+                    <input
+                      class="middle"
+                      type="text"
+                      placeholder="Nigeria"
+                      name="country"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="payment-details">
+                <h3 class="payment-h3 emoney-margin-bottom checkout-color">
+                  PAYMENT DETAILS
+                </h3>
+                <div class="payment-wrap">
+                  <div class="payment-h3-box">
+                    <p class="payment-h3">Payment Methods</p>
+                  </div>
+                  <div class="payment-method-box">
+                    <div class="emoney-box emoney-margin-bottom">
+                      <input
+                        type="radio"
+                        name="pay"
+                        checked
+                        id="emoney"
+                        onclick="img(0)"
+                      />
+                      <label for="emoney" class="radio">E-money</label>
+                    </div>
+                    <div class="ondelivery-box emoney-margin-bottom">
+                      <input
+                        type="radio"
+                        name="pay"
+                        id="ondelivery"
+                        onclick="img(1)"
+                      />
+                      <label for="ondelivery" class="radio"
+                        >Cash On Delivery</label
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="emoney-information-details" id="emoney-info">
+                  <div class="group-form">
+                    <div class="label">
+                      <label class="name">E-Money Number</label>
+                    </div>
+                    <input
+                      class="middle"
+                      type="text"
+                      placeholder="Lagos"
+                      name="number"
+                      required
+                    />
+                  </div>
+                  <div class="group-form">
+                    <div class="label">
+                      <label class="name">E-Money PIN</label>
+                    </div>
+                    <input
+                      class="middle"
+                      type="text"
+                      placeholder="Nigeria"
+                      name="pin"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+              <div class="summary">
+          <div class="summary-container">
+            <div class="cart-container">
+              <div class="cart-box">
+              <h3 class="cart-h3">SUMMARY</h3>
+              <p class="cart-title">Remove all</p>
+              </div>
+              <div class="cart-content-box">
+                <div class="product-box product-box-summary">
+                  <div class="img-price">
+                  <div class="cart-img-box">
+                    <img class="chart-image" src="/Images-for-audo/image-product (4).jpg" alt="image of speaker">
+                  </div>
+                </div>
+                <div class="cart-descriptiom">
+                  <h3 class="cart-title-h3">XX99</h3>
+                  <p class="cart-p">$ 2,999</p>
+                </div>
+                   <div class="quantity-box">
+                <p class="p-quantity">x1</p>
+              </div>
+                </div>
+               <div class="total-price-box">
+                  <div class="total total-price">
+                    <p class="title-p">TOTAL</p>
+                    <div class="price-tag">
+                    0
+                  </div>
+                  </div>
+                </div>
+               <div class="total-price-box">
+                  <div class="total shipping">
+                    <p class="title-p">SHIPPING</p>
+                    <div class="price-tag">
+                    0
+                  </div>
+                  </div>
+                </div>
+               <div class="total-price-box">
+                  <div class="total vat">
+                    <p class="title-p">VAT(INCLUDED)</p>
+                    <div class="price-tag">
+                    0
+                  </div>
+                  </div>
+                </div>
+               <div class="total-price-box">
+                  <div class="total grand-total">
+                    <p class="title-p">GRAND TOTAL</p>
+                    <div class="price-tag">
+                    0
+                  </div>
+                  </div>
+                </div>
+            
+            </div>
+            <a href="#" class="pay btn">Continue & Pay</a>
+          </div>
+        </header>
+      </div>
+<!-- 
+            <div class="summary">
+              <div class="box-summary">
+                <h2 class="cart-title">Summary</h2>
+                <div class="box-products-quantity">
+                  <div class="box-product">
+                    <div class="box-description">
+                      <div class="product-box-img">
+                        <img
+                          class="product-img"
+                          src="/Images-for-audo/image-product (3).jpg"
+                          alt="product image"
+                        />
+                      </div>
+                      <div class="product-description">
+                        <h3 class="p.title">zx9</h3>
+                        <p class="p.price">$4,500</p>
+                      </div>
+                    </div>
+                    <p class="p.quantity">x1</p>
+                  </div>
+                </div>
+                <div class="total-price-box">
+                  <div class="total bill-gap">
+                    <h3 class="title-h3">TOTAL</h3>
+                    <p class="title-price">0</p>
+                  </div>
+                </div>
+                <div class="total-price-box">
+                  <div class="shipping bill-gap">
+                    <h3 class="title-h3">SHIPPING</h3>
+                    <p class="title-price">0</p>
+                  </div>
+                </div>
+                <div class="total-price-box">
+                  <div class="vat bill-gap">
+                    <h3 class="title-h3">VAT(INCLUDED)</h3>
+                    <p class="title-price">0</p>
+                  </div>
+                </div>
+                <div class="total-price-box">
+                  <div class="grand-total bill-gap">
+                    <h3 class="title-h3">GRAND TOTAL</h3>
+                    <p class="title-price">0</p>
+                  </div>
+                </div>
+                <input type="submit" class="btn pay" value="Continue & pay" />
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+   
+  </body>
+</html>

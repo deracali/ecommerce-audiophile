@@ -1,0 +1,117 @@
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 445px 635px;
+  grid-template-rows: 280px 280px;
+  column-gap: 32px;
+  row-gap: 32px;
+  margin: 0 129px 160px 129px;
+
+  @include respond(laptop-med-large) {
+    margin: 0 100px 160px 100px;
+    column-gap: 18px;
+  }
+
+  @include respond(tab-land) {
+    margin: 0 100px 160px 50px;
+  }
+  @include respond(tab-med-land) {
+    margin: 0 100px 160px 23px;
+  }
+  @include respond(tab) {
+    column-gap: 1px;
+    row-gap: 1px;
+  }
+  @include respond(phone) {
+    margin: 0 100px 160px 81px;
+  }
+  @include respond(phone-min) {
+    margin: 0 100px 160px 75px;
+  }
+  @include respond(small-phone) {
+    margin: 0 100px 160px 33px;
+  }
+  @include respond(small-screen) {
+    margin: 0 100px 160px 83px;
+  }
+  @include respond(smaller-screen) {
+    margin: 0 100px 160px 45px;
+  }
+  @include respond(smaller-phones) {
+    margin: 0 100px 160px 22px;
+  }
+}
+
+.grid-img-50 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  // grid-row: 2;
+
+  @include respond(small-screen) {
+    width: 80%;
+  }
+  @include respond(smaller-phones) {
+    width: 90%;
+  }
+}
+
+.grid-img-100 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  @include respond(tab-deep) {
+    width: 81%;
+    max-width: 633px;
+  }
+
+  @include respond(tab-port) {
+    width: 75%;
+  }
+
+  @include respond(tab-port) {
+    width: 70%;
+  }
+  @include respond(tablet-large) {
+    width: 55%;
+  }
+  @include respond(tablet) {
+    width: 47%;
+  }
+  @include respond(tablet-port) {
+    width: 32%;
+  }
+  @include respond(phone-port) {
+    width: 26%;
+  }
+  @include respond(phone) {
+    display: none;
+  }
+}
+
+.grid-img {
+  @include respond(tab) {
+    width: 90%;
+  }
+  @include respond(small-screen) {
+    width: 78%;
+  }
+}
+
+.grid-image-100 {
+  @include respond(tab-med-land) {
+    width: 94%;
+    height: 95%;
+  }
+
+  @include respond(tab-deep) {
+    width: 96%;
+    height: 95%;
+    margin-left: -13px;
+    object-fit: cover;
+  }
+
+  @include respond(tab-port) {
+    width: 96%;
+  }
+}

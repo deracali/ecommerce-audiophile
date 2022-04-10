@@ -1,0 +1,15 @@
+.icons-wrapper {
+  display: flex;
+  gap: 20%;
+
+  @include respond(tablet-mini) {
+    display: flex;
+    gap: 13%;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+  }
+}
+
+path:hover {
+  fill: #d87d4a;
+}

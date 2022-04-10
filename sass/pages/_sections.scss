@@ -1,0 +1,47 @@
+.earphone-premium {
+  margin-bottom: 4.4rem;
+}
+
+.in-the-box-wrapper {
+  width: 100%;
+  max-width: 603px;
+}
+
+.p {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.in-the-box-text-box {
+  position: relative;
+  top: -93px;
+}
+
+.about-us {
+  margin-bottom: 11.4rem;
+}
+
+.you-may-also-like {
+  @include respond(tablet-mini) {
+    margin-left: 82px;
+  }
+  @include respond(phone) {
+    margin-left: 28px;
+  }
+}
+
+footer {
+  background-color: black;
+  position: relative;
+}
+
+.footer-logo {
+  @include respond(tab-port-mini) {
+    margin-bottom: 1.4rem;
+    margin-left: 30px;
+  }
+  @include respond(small-screen) {
+    margin-left: 3px;
+  }
+}

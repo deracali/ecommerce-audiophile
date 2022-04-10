@@ -1,0 +1,40 @@
+.space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  gap: 18%;
+}
+
+.space-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gap--abv-100 {
+  gap: 104px;
+}
+
+.margin-bottom {
+  margin-bottom: 160px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emoney-margin-bottom {
+  margin-bottom: 1.4rem;
+}
+
+.checkout-color {
+  color: #d87d4a;
+  font-size: 1.1rem;
+}

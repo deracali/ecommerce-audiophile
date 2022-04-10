@@ -1,0 +1,228 @@
+@mixin circle-box() {
+  border-radius: 50%;
+}
+
+// MEDIA QUERIES MANAGER
+
+/*
+0 - 600px     Phone
+600 - 900px   Tablet portrait
+900 - 1200px  Tablet landscape
+[1200px  - 1800px] Is where our normal style apply
+1800px + 1 : Big Desktop
+*/
+
+// @mixin respond-phone {
+//   @media (max-width: 600px) {
+//     @content;
+//   }
+// }
+
+/*
+$breakpoint argument choices:
+- Phone
+- tab-port
+- tab-land
+- Big Desktop
+*/
+
+@mixin respond($breakpoint) {
+  // 363px
+  @if ($breakpoint == smaller-phones) {
+    @media only screen and (max-width: 363px) {
+      @content;
+    }
+  }
+  // 400px
+  @if ($breakpoint == smaller-screen) {
+    @media only screen and (max-width: 400px) {
+      @content;
+    }
+  }
+  // 450px
+  @if ($breakpoint == small-screen) {
+    @media only screen and (max-width: 450px) {
+      @content;
+    }
+  }
+
+  // 500px
+  @if ($breakpoint == small-phone) {
+    @media only screen and (max-width: 500px) {
+      @content;
+    }
+  }
+
+  // 550px
+  @if ($breakpoint == phone-min) {
+    @media only screen and (max-width: 550px) {
+      @content;
+    }
+  }
+
+  // 600px
+  @if ($breakpoint == phone) {
+    @media only screen and (max-width: 600px) {
+      @content;
+    }
+  }
+
+  // 650px
+  @if ($breakpoint == phone-port) {
+    @media only screen and (max-width: 650px) {
+      @content;
+    }
+  }
+
+  // 700px
+  @if ($breakpoint == tablet-port) {
+    @media only screen and (max-width: 700px) {
+      @content;
+    }
+  }
+  // 750px
+  @if ($breakpoint == tablet-mini) {
+    @media only screen and (max-width: 750px) {
+      @content;
+    }
+  }
+
+  // 800px
+  @if ($breakpoint == tablet) {
+    @media only screen and (max-width: 800px) {
+      @content;
+    }
+  }
+  // 870px
+  @if ($breakpoint == tablet-large) {
+    @media only screen and (max-width: 870px) {
+      @content;
+    }
+  }
+
+  // 941px
+  @if ($breakpoint == tab-port-mini) {
+    @media only screen and (max-width: 941px) {
+      @content;
+    }
+  }
+
+  // 954px
+  @if ($breakpoint == tab-port) {
+    @media only screen and (max-width: 954px) {
+      @content;
+    }
+  }
+
+  // 1000px
+  @if ($breakpoint == tab-deep) {
+    @media only screen and (max-width: 1000px) {
+      @content;
+    }
+  }
+
+  // 1076px
+  @if ($breakpoint == tab) {
+    @media only screen and (max-width: 1076px) {
+      @content;
+    }
+  }
+
+  // 1101px
+  @if ($breakpoint == tab-deep-land) {
+    @media only screen and (max-width: 1101px) {
+      @content;
+    }
+  }
+
+  // 1154px
+  @if ($breakpoint == tab-med-land) {
+    @media only screen and (max-width: 1154px) {
+      @content;
+    }
+  }
+
+  // 1202px
+  @if ($breakpoint == tab-land) {
+    @media only screen and (max-width: 1202px) {
+      @content;
+    }
+  }
+
+  // 1250px
+  @if ($breakpoint == tab-land-large) {
+    @media only screen and (max-width: 1250px) {
+      @content;
+    }
+  }
+
+  // 1302px
+  @if ($breakpoint == laptop-small-large) {
+    @media only screen and (max-width: 1302px) {
+      @content;
+    }
+  }
+
+  // 1354px
+  @if ($breakpoint == laptop-med-large) {
+    @media only screen and (max-width: 1354px) {
+      @content;
+    }
+  }
+
+  // 1402px
+  @if ($breakpoint == laptop-large) {
+    @media only screen and (max-width: 1402px) {
+      @content;
+    }
+  }
+
+  // 1455px
+  @if ($breakpoint == med-deep-desktop) {
+    @media only screen and (max-width: 1455px) {
+      @content;
+    }
+  }
+
+  // 1502px
+  @if ($breakpoint == med-low-desktop) {
+    @media only screen and (max-width: 1502px) {
+      @content;
+    }
+  }
+
+  // 1552px
+  @if ($breakpoint == med-small-desktop) {
+    @media only screen and (max-width: 1552px) {
+      @content;
+    }
+  }
+
+  // 1620px
+  @if ($breakpoint == med-b-desktop) {
+    @media only screen and (max-width: 1624px) {
+      @content;
+    }
+  }
+
+  // 1702px
+  @if ($breakpoint == medium-b-desktop) {
+    @media only screen and (max-width: 1702px) {
+      @content;
+    }
+  }
+
+  // 1800px
+  @if ($breakpoint == big-desktop) {
+    @media only screen and (max-width: 1800px) {
+      @content;
+    }
+  }
+
+  // 2168px
+  @if ($breakpoint == max-desktop) {
+    @media only screen and(max-width:2168px) {
+      @content;
+    }
+  }
+}

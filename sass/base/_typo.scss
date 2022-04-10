@@ -1,0 +1,655 @@
+.link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.overline {
+  font-size: 14px;
+  color: #898989;
+  line-height: auto;
+  letter-spacing: 10px;
+  font-weight: 400;
+}
+
+.header-h1 {
+  color: #fff;
+  margin: 0.8rem 0;
+
+  @include respond(big-desktop) {
+    width: 80%;
+  }
+
+  @include respond(tab) {
+    width: 85%;
+  }
+  @include respond(tab-port) {
+    width: 88%;
+  }
+  @include respond(tab-port-mini) {
+    width: 100%;
+  }
+}
+
+.hero-para {
+  width: 100%;
+  max-width: 90%;
+  margin-bottom: 2.4rem;
+  color: #898989;
+
+  @include respond(big-desktop) {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  @include respond(tab-land-large) {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+
+  @include respond(tab-land) {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+  @include respond(tab-port-mini) {
+    margin-left: 23px;
+  }
+}
+
+h2 {
+  margin-bottom: 1.9rem;
+
+  @include respond(tab-land-large) {
+    margin-bottom: 0.9rem;
+  }
+
+  @include respond(tab-med-land) {
+    margin-bottom: 1.9rem;
+  }
+
+  @include respond(phone-min) {
+    margin-bottom: 0.9rem;
+  }
+  @include respond(smaller-phones) {
+    margin-bottom: 0.2rem;
+  }
+}
+
+.speaker-premium-h2 {
+  @include respond(phone) {
+    font-size: 1.5rem;
+  }
+  @include respond(small-screen) {
+    font-size: 1.2rem;
+  }
+}
+
+.text-box-premium {
+  width: 100%;
+
+  @include respond(tab) {
+    max-width: 381px;
+    padding: 4.4rem 0;
+  }
+  @include respond(tab-deep) {
+    margin-left: 151px;
+  }
+}
+
+.premium-text {
+  width: 100%;
+  max-width: 80%;
+  margin-bottom: 2.9rem;
+  color: #fff;
+
+  @include respond(big-desktop) {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  @include respond(tab-land-large) {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 0.9rem;
+  }
+
+  @include respond(tab-land) {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  @include respond(tab-med-land) {
+    margin-bottom: 1.9rem;
+  }
+
+  @include respond(tab-deep) {
+    text-align: center;
+    max-width: 93%;
+    margin-left: -52px;
+  }
+}
+
+.text-box-zx7 {
+  position: absolute;
+  left: 17%;
+
+  @include respond(max-desktop) {
+    left: 18%;
+  }
+
+  @include respond(tab-deep) {
+    left: 26%;
+  }
+  @include respond(tab-port-mini) {
+    left: 10%;
+  }
+
+  @include respond(small-phone) {
+    top: 20px;
+  }
+}
+
+.description-box {
+  padding: 82px;
+  position: relative;
+  background-color: rgb(241, 241, 241);
+  z-index: -1;
+
+  @include respond(tab) {
+    padding: 66px;
+  }
+  @include respond(tab-deep) {
+    padding: 59px;
+  }
+  @include respond(tab-port-mini) {
+    padding: 51px;
+  }
+  @include respond(tablet-mini) {
+    padding: 40px;
+  }
+  @include respond(phone-port) {
+    padding: 85px;
+  }
+}
+
+.earphone-text-box {
+  width: 46%;
+  padding: 91px 69px 57px 64px;
+  height: 410px;
+  background-color: #f1f1f1;
+
+  @include respond(big-desktop) {
+    height: 312px;
+  }
+
+  @include respond(medium-b-desktop) {
+    height: 319px;
+  }
+
+  @include respond(med-b-desktop) {
+    height: 320px;
+  }
+
+  @include respond(med-small-desktop) {
+    height: 320px;
+  }
+
+  @include respond(med-low-desktop) {
+    height: 312px;
+  }
+
+  @include respond(med-deep-desktop) {
+    height: 325px;
+  }
+
+  @include respond(laptop-large) {
+    height: 305px;
+  }
+
+  @include respond(laptop-med-large) {
+    height: 299px;
+  }
+
+  @include respond(laptop-small-large) {
+    height: 286px;
+    padding: 50px 40px 50px 40px;
+  }
+
+  @include respond(tab-land-large) {
+    height: 268px;
+  }
+
+  @include respond(tab-land) {
+    height: 244px;
+  }
+
+  @include respond(tab-med-land) {
+    height: 236px;
+    padding: 45px 34px 38px 34px;
+  }
+
+  @include respond(tab-deep-land) {
+    height: 223px;
+  }
+  @include respond(tab) {
+    height: 210px;
+  }
+  @include respond(tab-deep) {
+    height: 297px;
+  }
+  @include respond(tab-port-mini) {
+    height: 237px;
+  }
+
+  @include respond(phone) {
+    height: 207px;
+  }
+
+  @include respond(phone-min) {
+    height: 175px;
+    padding: 30px 28px 28px 25px;
+  }
+  @include respond(small-screen) {
+    height: 139px;
+    padding: 29px 18px 19px 15px;
+  }
+  @include respond(smaller-phones) {
+    height: 129px;
+    padding: 24px 13px 19px 9px;
+  }
+}
+
+.zx9-heading {
+  width: 10%;
+  color: #fff;
+  font-size: 4rem;
+
+  @include respond(tab-deep) {
+    text-align: center;
+    width: 60%;
+  }
+}
+
+h3 {
+  color: black;
+}
+
+.desc-span {
+  color: #898989;
+}
+
+.earphone-h1 {
+  margin-bottom: 1.9rem;
+
+  @include respond(tab-med-land) {
+    font-size: 2rem;
+  }
+  @include respond(tab-port-mini) {
+    font-size: 1.6rem;
+  }
+  @include respond(phone-port) {
+    font-size: 1.4rem;
+  }
+
+  @include respond(phone) {
+    font-size: 1.2rem;
+  }
+  @include respond(small-screen) {
+    margin-bottom: 0.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+.about-us-text-box {
+  width: 100%;
+  max-width: 525px;
+
+  @include respond(tab-land) {
+    width: 434px;
+  }
+  @include respond(laptop-small-large) {
+    max-width: 482px;
+  }
+
+  @include respond(tab-deep-land) {
+    max-width: 388px;
+  }
+  @include respond(tab) {
+    max-width: 370px;
+  }
+
+  @include respond(tab-deep) {
+    max-width: 100%;
+    width: 661px;
+    text-align: center;
+  }
+}
+
+.about-us-span {
+  color: #d87d4a;
+}
+
+.about-us-h2 {
+  width: 100%;
+  font-size: 3rem;
+
+  @include respond(big-desktop) {
+    font-size: 3.3rem;
+  }
+  @include respond(laptop-small-large) {
+    font-size: 3rem;
+  }
+  @include respond(tab-land) {
+    font-size: 2.7rem;
+    margin-bottom: 2.4rem;
+  }
+
+  @include respond(tab-deep-land) {
+    font-size: 2.2rem;
+  }
+  @include respond(tab) {
+    font-size: 2.2rem;
+  }
+
+  @include respond(tab-deep) {
+    font-size: 2rem;
+    width: 132%;
+    margin-left: -116px;
+  }
+
+  @include respond(tablet) {
+    width: 120%;
+    margin-left: -75px;
+  }
+
+  @include respond(tablet-mini) {
+    width: 100%;
+    margin-left: -10px;
+    font-size: 1.8rem;
+  }
+  @include respond(phone) {
+    margin-left: 0px;
+    font-size: 1.6rem;
+  }
+  @include respond(phone) {
+    font-size: 1.4rem;
+  }
+  @include respond(small-screen) {
+    font-size: 1.2rem;
+  }
+  @include respond(smaller-phones) {
+    font-size: 1rem;
+  }
+}
+
+.about-us-pg {
+  font-size: 1.2rem;
+  color: #898989;
+
+  @include respond(big-desktop) {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+
+  @include respond(laptop-small-large) {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    width: 100%;
+    max-width: 429px;
+  }
+
+  @include respond(tab-land-large) {
+    width: 100%;
+    max-width: 416px;
+  }
+
+  @include respond(tab-deep) {
+    width: 150%;
+    max-width: 634px;
+  }
+
+  @include respond(phone-port) {
+    max-width: 588px;
+    margin-left: 7px;
+  }
+
+  @include respond(phone) {
+    max-width: 498px;
+    margin-left: 39px;
+  }
+  @include respond(phone-min) {
+    max-width: 479px;
+    margin-left: 25px;
+  }
+  @include respond(small-phone) {
+    max-width: 399px;
+    margin-left: 35px;
+  }
+  @include respond(small-screen) {
+    max-width: 303px;
+    margin-left: 68px;
+  }
+  @include respond(smaller-screen) {
+    max-width: 283px;
+    margin-left: 47px;
+  }
+  @include respond(smaller-phones) {
+    margin-left: 30px;
+  }
+}
+
+.footer-text {
+  width: 100%;
+  max-width: 785px;
+  font-size: 1.2rem;
+  color: rgb(137, 137, 137);
+  margin-bottom: 4.4rem;
+  line-height: 1.5;
+
+  @include respond(big-desktop) {
+    font-size: 1.5rem;
+  }
+  @include respond(tab-med-land) {
+    max-width: 641px;
+  }
+
+  @include respond(tab-deep-land) {
+    max-width: 648px;
+  }
+
+  @include respond(tab-port-mini) {
+    max-width: 540px;
+  }
+  @include respond(tablet) {
+    max-width: 520px;
+  }
+
+  @include respond(tablet-mini) {
+    font-size: 1.2rem;
+  }
+  @include respond(small-screen) {
+    width: 180%;
+    margin-left: -78px;
+  }
+  @include respond(smaller-screen) {
+    width: 217%;
+    margin-left: -88px;
+  }
+  @include respond(smaller-phones) {
+    width: 239%;
+    margin-left: -85px;
+  }
+}
+
+.footer-copyright-text {
+  color: rgb(137, 137, 137);
+  margin: 0 150px;
+  padding-bottom: 4.4rem;
+  line-height: 1.6;
+
+  @include respond(med-deep-desktop) {
+    margin: 0 100px;
+  }
+  @include respond(tab) {
+    margin: 0px 111px;
+  }
+  @include respond(tab-deep) {
+    margin: 0px 16px;
+  }
+  @include respond(tablet-mini) {
+    display: flex;
+    justify-content: center;
+  }
+  @include respond(small-screen) {
+    font-size: 1.2rem;
+  }
+  @include respond(smaller-phones) {
+    font-size: 1rem;
+  }
+}
+
+.new-product-h1 {
+  width: 65%;
+  margin: 0.8rem 0;
+  color: black;
+
+  @include respond(laptop-large) {
+    width: 85%;
+  }
+
+  @include respond(med-small-desktop) {
+    width: 90%;
+  }
+
+  @include respond(tab-land) {
+    width: 95%;
+  }
+}
+
+.new-product-para {
+  font-size: 1rem;
+  width: 100%;
+  line-height: 1.6;
+  max-width: 118%;
+  margin-bottom: 2.4rem;
+  color: #898989;
+}
+
+.new-product-overline {
+  color: rgb(216, 125, 74);
+}
+
+.new-product-text-mg-bottom {
+  @include respond(tab-deep) {
+    margin-bottom: 240px;
+  }
+  @include respond(phone) {
+    margin-bottom: 140px;
+  }
+  @include respond(phone-min) {
+    margin-bottom: 89px;
+  }
+}
+
+.description {
+  width: 100%;
+  max-width: 500px;
+
+  @include respond(laptop-med-large) {
+    max-width: 570px;
+  }
+  @include respond(tab-deep) {
+    text-align: center;
+  }
+}
+
+.go-back {
+  position: relative;
+  top: 102px;
+  left: 142px;
+  color: #898989;
+  font-size: 1rem;
+
+  @include respond(phone-min) {
+    top: 46px;
+  }
+  @include respond(phone-min) {
+    top: 39px;
+  }
+}
+
+.goback-checkout {
+  left: 73px;
+}
+
+.features-h3 {
+  margin-bottom: 2.4rem;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.features-text {
+  margin-bottom: 2.4rem;
+  line-height: 1.6;
+}
+
+.in-box-span-color {
+  color: #d87d4a;
+}
+
+.you-may-also-h3 {
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.features-text-box {
+  width: 100%;
+  max-width: 525px;
+
+  @include respond(tab-port-mini) {
+    margin-bottom: 8.4rem;
+  }
+  @include respond(small-phone) {
+    width: 126%;
+  }
+  @include respond(smaller-screen) {
+    width: 146%;
+  }
+  @include respond(smaller-phones) {
+    width: 176%;
+  }
+}
+
+.features-text {
+  margin-bottom: 2.4rem;
+}
+
+.cart-h3 {
+  color: black;
+}
+
+.cart-title-h3 {
+  color: black;
+  margin-bottom: 0.4rem;
+}
+
+.cart-p {
+  color: black;
+}
+
+.title-p {
+  color: #8f8f8f;
+  font-size: 1.2rem;
+}
+
+.price-tag {
+  color: black;
+}
+
+.p-quantity {
+  color: black;
+}
+
+.chectout-h2 {
+  color: black;
+  font-size: 1.8rem;
+}

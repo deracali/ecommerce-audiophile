@@ -1,0 +1,353 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: "Manrope", sans-serif;
+  overflow-x: hidden;
+  background-color: #fafafa;
+}
+
+#root {
+  width: 100%;
+}
+
+.row {
+  background-image: url(/Images-for-audo/image-hero.55c18e98.jpg);
+  background-position: 40% 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 945px;
+  margin-bottom: 14.5rem;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.overline {
+  font-size: 14px;
+  color: #898989;
+  line-height: auto;
+  letter-spacing: 10px;
+  font-weight: 400;
+}
+
+.header-h1 {
+  color: #fff;
+  margin: 0.8rem 0;
+}
+
+.hero-para {
+  width: 100%;
+  max-width: 90%;
+  margin-bottom: 2.4rem;
+  color: #898989;
+}
+
+h2 {
+  margin-bottom: 1.9rem;
+}
+
+.premium-text {
+  width: 100%;
+  max-width: 80%;
+  margin-bottom: 2.9rem;
+  color: #fff;
+}
+
+.zx9-heading {
+  width: 10%;
+  color: #fff;
+  font-size: 4rem;
+}
+
+h3 {
+  color: black;
+}
+
+.desc-span {
+  color: #898989;
+}
+
+.earphone-h1 {
+  margin-bottom: 1.9rem;
+}
+
+.about-us-span {
+  color: #d87d4a;
+}
+
+.about-us-h2 {
+  width: 100%;
+  font-size: 3rem;
+}
+
+.about-us-pg {
+  font-size: 1.2rem;
+  color: #898989;
+}
+
+.footer-text {
+  width: 100%;
+  max-width: 785px;
+  font-size: 1.2rem;
+  color: #898989;
+  margin-bottom: 7.4rem;
+}
+
+.footer-copyright-text {
+  color: #898989;
+  margin: 0 150px;
+  padding-bottom: 4.4rem;
+}
+
+.space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  gap: 18%;
+}
+
+.space-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gap--abv-100 {
+  gap: 104px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+
+ul li {
+  list-style: none;
+}
+
+nav {
+  background-color: #101010;
+}
+
+nav .navigation {
+  padding: 2.5rem 0;
+  position: relative;
+  z-index: 10;
+  border-bottom: 1px solid #fff;
+  margin: 0 150px;
+}
+
+.category-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 104px;
+  margin: 0 128px;
+  height: 578px;
+}
+
+.description-box {
+  padding: 82px;
+  position: relative;
+  background-color: #f1f1f1;
+  z-index: -1;
+}
+
+.headphoness {
+  transform: translateY(-338px);
+}
+
+.speakerss {
+  transform: translateY(-311px);
+}
+
+.earphoness {
+  transform: translateY(-277px);
+}
+
+.box-premium-speaker {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 4.4rem;
+}
+
+.premium-wrapper {
+  background-color: #d87d4a;
+  margin: 0 129px;
+}
+
+.speaker-premium {
+  margin-bottom: 4.4rem;
+}
+
+.speaker-wrapper {
+  margin: 0 129px;
+}
+
+.text-box-zx7 {
+  position: absolute;
+  left: 17%;
+}
+
+.earphone-text-box {
+  width: 38%;
+  padding: 91px 69px 57px 64px;
+  height: 402px;
+  background-color: #f1f1f1;
+}
+
+.earphone-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2.4rem;
+  gap: 2%;
+}
+
+.earphone-premium {
+  margin-bottom: 4.4rem;
+}
+
+.about-us {
+  margin-bottom: 11.4rem;
+}
+
+.about-us-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2.4rem;
+  align-items: center;
+  gap: 12%;
+  margin: 0px -12px;
+}
+
+.about-us-text-box {
+  width: 100%;
+  max-width: 525px;
+}
+
+footer {
+  background-color: black;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 46%;
+  margin: 0px 150px 61px 150px;
+  padding-top: 70px;
+}
+
+.footer-wrapper-2 {
+  color: #fff;
+  display: flex;
+  gap: 35%;
+  margin: 0 150px;
+}
+
+.social-media-icons {
+  position: relative;
+  top: 70px;
+}
+
+header .description {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  margin: 0 120px;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  max-width: 40%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img.cart-image {
+  width: 100%;
+  max-width: 80%;
+}
+
+.cart-img {
+  height: 50%;
+}
+
+img.headphone {
+  margin-bottom: 12.4rem;
+}
+
+img.speaker {
+  margin-bottom: 9.8rem;
+}
+
+img.earphone {
+  margin-bottom: 7.4rem;
+}
+
+img.premium-speaker {
+  width: 108%;
+}
+
+img.speaker-img {
+  width: 100%;
+  max-width: 100%;
+}
+
+img.earphone-img {
+  height: 401px;
+  width: 100%;
+  max-width: 696px;
+}
+
+img.about-us-img {
+  width: 101%;
+  max-width: 686px;
+  height: 648px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 20px 10px;
+  width: 100%;
+  max-width: 35%;
+  color: #fff;
+  letter-spacing: 1px;
+  outline: none;
+  text-align: center;
+}
+
+.btn-brown {
+  background-color: #d87d4a;
+  color: #fafafa;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+.btn-black {
+  background-color: black;
+  color: #fff;
+}
+
+/*# sourceMappingURL=main.css.map */

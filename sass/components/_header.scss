@@ -1,0 +1,76 @@
+header .description {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  margin: 0 120px;
+  position: absolute;
+  top: 6%;
+  width: 100%;
+  max-width: 40%;
+
+  @include respond(max-desktop) {
+    padding: 7.6rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  @include respond(tab-deep) {
+    padding: 7.6rem 0.5rem 1.5rem 0.5rem;
+  }
+
+  @include respond(tab-port-mini) {
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+    margin-left: 188px;
+  }
+
+  @include respond(tab-deep) {
+    margin-left: 120px;
+  }
+
+  @include respond(tablet-mini) {
+    margin-left: 83px;
+  }
+  @include respond(phone-port) {
+    margin-left: 45px;
+  }
+  @include respond(phone) {
+    margin-left: 21px;
+  }
+  @include respond(small-phone) {
+    margin-left: -5px;
+  }
+  @include respond(small-screen) {
+    margin-left: 1px;
+  }
+  @include respond(smaller-phones) {
+    margin-left: -7px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-box {
+  background-image: url(/Images-for-audo/image-hero.55c18e98.jpg);
+  background-position: 40% 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 684px;
+  margin-bottom: 8.5rem;
+
+  @include respond(big-desktop) {
+    height: 839px;
+    background-position: 40% 259%;
+  }
+
+  @include respond(med-low-desktop) {
+    height: 718px;
+    background-position: 40% 153%;
+  }
+
+  @include respond(tab-port-mini) {
+    background-image: url(/Images-for-audo/image-hero-small.jpg);
+    background-position: 40% 80%;
+  }
+}
