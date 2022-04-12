@@ -260,7 +260,7 @@
   }
 }
 
-.header-headpones {
+.header-menu-links {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -335,5 +335,34 @@
   }
   @include respond(tab-port-mini) {
     flex-direction: column;
+  }
+}
+
+.container {
+  display: flex;
+
+  @include respond(tab-land) {
+    flex-direction: column;
+  }
+}
+
+.summary {
+  width: 100%;
+  max-width: 467px;
+  position: absolute;
+  top: 40%;
+  left: 67%;
+
+  @include respond(tab-land) {
+    position: relative;
+    top: 40%;
+    left: 5%;
+  }
+
+  @include respond(tablet) {
+    left: 8%;
+  }
+  @include respond(phone-min) {
+    left: 4%;
   }
 }

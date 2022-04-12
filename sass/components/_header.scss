@@ -3,6 +3,9 @@ header .description {
   flex-direction: column;
   padding: 1.5rem;
   margin: 0 120px;
+  animation-name: moveInBottom;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
   position: absolute;
   top: 6%;
   width: 100%;
@@ -58,6 +61,7 @@ a {
   background-size: cover;
   height: 684px;
   margin-bottom: 8.5rem;
+  position: relative;
 
   @include respond(big-desktop) {
     height: 839px;
@@ -73,4 +77,10 @@ a {
     background-image: url(/Images-for-audo/image-hero-small.jpg);
     background-position: 40% 80%;
   }
+}
+
+.header-menu-links-text {
+  animation-name: moveInBtm;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
 }

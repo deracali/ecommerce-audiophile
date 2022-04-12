@@ -1,6 +1,7 @@
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
+@import "base/animation";
 @import "base/base";
 @import "base/typo";
 @import "base/utilities";
@@ -11,6 +12,7 @@
 @import "components/icons";
 @import "layout/containers";
 @import "layout/grid";
+@import "layout/phone-menu";
 @import "layout/you-also";
 @import "layout/navigation";
 @import "pages/sections";

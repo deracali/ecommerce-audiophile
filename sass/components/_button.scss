@@ -6,10 +6,15 @@
   color: #fff;
   letter-spacing: 1px;
   outline: none;
+  animation-name: moveInBtm;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 4s;
   text-align: center;
   font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.8s;
 
   @include respond(tab-med-land) {
     max-width: 32%;
@@ -47,6 +52,7 @@
 
 .btn-brown:hover {
   background-color: rgb(241, 161, 115);
+  transform: translateY(-0.8rem);
 }
 
 .btn-transparent {
@@ -62,6 +68,7 @@
 .btn-transparent:hover {
   background-color: black;
   color: #fff;
+  letter-spacing: 5px;
 }
 
 .btn-black {
@@ -75,6 +82,7 @@
 
 .btn-black:hover {
   background-color: #484848;
+  letter-spacing: 5px;
 }
 
 .link-add-to-cart {

@@ -1,18 +1,21 @@
-.link {
-  color: #fff;
-  text-decoration: none;
-}
-
 .overline {
   font-size: 14px;
   color: #898989;
   line-height: auto;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 3s;
   letter-spacing: 10px;
   font-weight: 400;
 }
 
 .header-h1 {
   color: #fff;
+  animation-name: moveInRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 3s;
   margin: 0.8rem 0;
 
   @include respond(big-desktop) {
@@ -33,6 +36,10 @@
 .hero-para {
   width: 100%;
   max-width: 90%;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 3s;
   margin-bottom: 2.4rem;
   color: #898989;
 
@@ -634,6 +641,10 @@ h3 {
 
 .cart-p {
   color: black;
+
+  @include respond(smaller-screen) {
+    font-size: 1.2rem;
+  }
 }
 
 .title-p {
@@ -652,4 +663,8 @@ h3 {
 .chectout-h2 {
   color: black;
   font-size: 1.8rem;
+
+  @include respond(smaller-screen) {
+    margin-bottom: 1.2rem;
+  }
 }

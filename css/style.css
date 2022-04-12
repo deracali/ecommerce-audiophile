@@ -12,6 +12,49 @@ $breakpoint argument choices:
 - tab-land
 - Big Desktop
 */
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    transform: translatex(0);
+  }
+  50% {
+    transform: translateX(3rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes moveInLeft {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translateX(-3rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes moveInBtm {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translateY(3rem);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 *,
 *::after,
 *::before {
@@ -27,7 +70,7 @@ body {
 }
 
 .row {
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -84,21 +127,24 @@ body {
   display: none;
 }
 
-.link {
-  color: #fff;
-  text-decoration: none;
-}
-
 .overline {
   font-size: 14px;
   color: #898989;
   line-height: auto;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 3s;
   letter-spacing: 10px;
   font-weight: 400;
 }
 
 .header-h1 {
   color: #fff;
+  animation-name: moveInRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 3s;
   margin: 0.8rem 0;
 }
 @media only screen and (max-width: 1800px) {
@@ -125,6 +171,10 @@ body {
 .hero-para {
   width: 100%;
   max-width: 90%;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 3s;
   margin-bottom: 2.4rem;
   color: #898989;
 }
@@ -882,6 +932,11 @@ h3 {
 .cart-p {
   color: black;
 }
+@media only screen and (max-width: 400px) {
+  .cart-p {
+    font-size: 1.2rem;
+  }
+}
 
 .title-p {
   color: #8f8f8f;
@@ -899,6 +954,11 @@ h3 {
 .chectout-h2 {
   color: black;
   font-size: 1.8rem;
+}
+@media only screen and (max-width: 400px) {
+  .chectout-h2 {
+    margin-bottom: 1.2rem;
+  }
 }
 
 .space-between {
@@ -947,6 +1007,9 @@ header .description {
   flex-direction: column;
   padding: 1.5rem;
   margin: 0 120px;
+  animation-name: moveInBottom;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
   position: absolute;
   top: 6%;
   width: 100%;
@@ -1017,6 +1080,7 @@ a {
   background-size: cover;
   height: 684px;
   margin-bottom: 8.5rem;
+  position: relative;
 }
 @media only screen and (max-width: 1800px) {
   .header-box {
@@ -1035,6 +1099,12 @@ a {
     background-image: url(/Images-for-audo/image-hero-small.jpg);
     background-position: 40% 80%;
   }
+}
+
+.header-menu-links-text {
+  animation-name: moveInBtm;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
 }
 
 img.cart-image {
@@ -1449,10 +1519,15 @@ img.new-product-img {
   color: #fff;
   letter-spacing: 1px;
   outline: none;
+  animation-name: moveInBtm;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 4s;
   text-align: center;
   font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.8s;
 }
 @media only screen and (max-width: 1154px) {
   .btn {
@@ -1503,6 +1578,7 @@ img.new-product-img {
 
 .btn-brown:hover {
   background-color: #f1a173;
+  transform: translateY(-0.8rem);
 }
 
 .btn-transparent {
@@ -1519,6 +1595,7 @@ img.new-product-img {
 .btn-transparent:hover {
   background-color: black;
   color: #fff;
+  letter-spacing: 5px;
 }
 
 .btn-black {
@@ -1533,6 +1610,7 @@ img.new-product-img {
 
 .btn-black:hover {
   background-color: #484848;
+  letter-spacing: 5px;
 }
 
 .link-add-to-cart {
@@ -2110,7 +2188,7 @@ path:hover {
   }
 }
 
-.header-headpones {
+.header-menu-links {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2203,6 +2281,40 @@ path:hover {
 @media only screen and (max-width: 941px) {
   .features-wrapper {
     flex-direction: column;
+  }
+}
+
+.container {
+  display: flex;
+}
+@media only screen and (max-width: 1202px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.summary {
+  width: 100%;
+  max-width: 467px;
+  position: absolute;
+  top: 40%;
+  left: 67%;
+}
+@media only screen and (max-width: 1202px) {
+  .summary {
+    position: relative;
+    top: 40%;
+    left: 5%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .summary {
+    left: 8%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .summary {
+    left: 4%;
   }
 }
 
@@ -2361,6 +2473,108 @@ path:hover {
   }
 }
 
+.screen1_menu_items {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.screen1_menu_btn {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+@media only screen and (max-width: 941px) {
+  .screen1_menu_btn {
+    display: flex;
+  }
+}
+
+.screen1_menu_hamburger {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 5px;
+  z-index: 10;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.screen1_menu_hamburger::before,
+.screen1_menu_hamburger::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.screen1_menu_hamburger::before {
+  transform: translateY(-6px);
+}
+
+.screen1_menu_hamburger::after {
+  transform: translateY(6px);
+}
+
+.screen1_menu_items {
+  background: black;
+  color: #fff;
+  position: absolute;
+  left: -73%;
+  height: 50vh;
+  width: 41%;
+  border-radius: 7px;
+  padding-top: 70px;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+}
+@media only screen and (max-width: 700px) {
+  .screen1_menu_items {
+    width: 60%;
+    height: 100vh;
+  }
+}
+
+.screen1_menu_items li {
+  padding: 10px 0;
+  text-align: center;
+  list-style-type: none;
+  transition: all 0.2s ease;
+}
+
+.screen1_menu_items li:hover {
+  letter-spacing: 2px;
+  opacity: 6;
+}
+
+.screen1_menu_btn input:checked ~ .screen1_menu_hamburger {
+  transform: translateX(-50px);
+  background: transparent;
+}
+
+.screen1_menu_btn input:checked ~ .screen1_menu_hamburger::before {
+  transform: rotate(45deg) translate(37px, -35px);
+}
+
+.screen1_menu_btn input:checked ~ .screen1_menu_hamburger::after {
+  transform: rotate(-45deg) translate(34px, 36px);
+}
+
+.screen1_menu_btn input:checked ~ .screen1_menu_items {
+  left: -1%;
+}
+
+.screen1_menu_btn input {
+  display: none;
+  position: absolute;
+  left: 13px;
+}
+
 .you-may-also-wrapper {
   display: flex;
   justify-content: space-around;
@@ -2451,6 +2665,7 @@ ul.link-groups {
   align-items: center;
   gap: 10%;
   font-size: 1.1rem;
+  transition: all 0.4s;
 }
 @media only screen and (max-width: 1202px) {
   ul.link-groups {
@@ -2472,6 +2687,16 @@ ul.link-groups {
   ul.link-groups {
     display: none;
   }
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  transition: all 2s;
+}
+
+.link:hover {
+  letter-spacing: 6px;
 }
 
 @media only screen and (max-width: 941px) {
@@ -2538,12 +2763,68 @@ ul li {
   width: 100%;
   max-width: 733px;
 }
+@media only screen and (max-width: 1202px) {
+  .checkout {
+    max-width: 988px;
+    padding: 90px 157px 71px 142px;
+  }
+}
+@media only screen and (max-width: 1154px) {
+  .checkout {
+    max-width: 900px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .checkout {
+    max-width: 736px;
+    padding: 90px 33px 71px 54px;
+  }
+}
+@media only screen and (max-width: 870px) {
+  .checkout {
+    max-width: 678px;
+    padding: 90px 32px 71px 38px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .checkout {
+    max-width: 589px;
+    padding: 90px 28px 71px 30px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .checkout {
+    max-width: 559px;
+    padding: 90px 4px 71px 15px;
+    margin: 160px 22px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .checkout {
+    padding: 90px 1px 71px 1px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .checkout {
+    padding: 90px 88px 71px 75px;
+  }
+}
 
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;
   gap: 10%;
   margin-bottom: 4.4rem;
+}
+@media only screen and (max-width: 800px) {
+  .flex-wrap {
+    gap: 4%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .flex-wrap {
+    gap: 1%;
+  }
 }
 
 .middle {
@@ -2562,6 +2843,16 @@ ul li {
   margin-bottom: 1.4rem;
   margin-top: 0.8rem;
 }
+@media only screen and (max-width: 800px) {
+  .middle {
+    width: 98%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .middle {
+    width: 80%;
+  }
+}
 
 .middle:is(:focus, :valid) {
   border: 2px solid #d87d4a;
@@ -2570,24 +2861,70 @@ ul li {
 .full {
   max-width: 615px;
 }
+@media only screen and (max-width: 800px) {
+  .full {
+    max-width: 507px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .full {
+    max-width: 453px;
+  }
+}
 
 .emoney-information-details {
   display: flex;
   gap: 20%;
+}
+@media only screen and (max-width: 800px) {
+  .emoney-information-details {
+    gap: 8%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .emoney-information-details {
+    flex-direction: column;
+  }
 }
 
 .payment-wrap {
   display: flex;
   gap: 34%;
 }
+@media only screen and (max-width: 800px) {
+  .payment-wrap {
+    gap: 26%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .payment-wrap {
+    gap: 7%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .payment-wrap {
+    flex-direction: column;
+  }
+}
 
 .payment-method-box {
   position: relative;
   left: 32px;
 }
+@media only screen and (max-width: 400px) {
+  .payment-method-box {
+    margin-bottom: 1.4rem;
+    left: -11px;
+  }
+}
 
 .payment-h3 {
   color: black;
+}
+@media only screen and (max-width: 400px) {
+  .payment-h3 {
+    margin-bottom: 1.2rem;
+  }
 }
 
 input[type=radio] {
@@ -2605,6 +2942,21 @@ label.radio {
   width: 275px;
   cursor: pointer;
   color: black;
+}
+@media only screen and (max-width: 800px) {
+  label.radio {
+    width: 239px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  label.radio {
+    width: 205px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  label.radio {
+    width: 179px;
+  }
 }
 
 label.radio::before {
@@ -2675,14 +3027,6 @@ input[type=radio]:checked + label.radio::after {
   width: 100%;
   font-size: 1.2rem;
   padding-top: 3.4rem;
-}
-
-.summary {
-  width: 100%;
-  max-width: 467px;
-  position: absolute;
-  top: 42%;
-  left: 63%;
 }
 
 .earphone-premium {

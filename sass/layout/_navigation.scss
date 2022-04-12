@@ -29,6 +29,7 @@ ul.link-groups {
   align-items: center;
   gap: 10%;
   font-size: 1.1rem;
+  transition: all 0.4s;
 
   @include respond(tab-land) {
     gap: 5%;
@@ -44,6 +45,16 @@ ul.link-groups {
   @include respond(small-screen) {
     display: none;
   }
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  transition: all 2s;
+}
+
+.link:hover {
+  letter-spacing: 6px;
 }
 
 ul.header-links {
@@ -102,6 +113,37 @@ a.earphones {
   border-radius: 22px;
   width: 100%;
   max-width: 733px;
+
+  @include respond(tab-land) {
+    max-width: 988px;
+    padding: 90px 157px 71px 142px;
+  }
+  @include respond(tab-med-land) {
+    max-width: 900px;
+  }
+  @include respond(tab-deep) {
+    max-width: 736px;
+    padding: 90px 33px 71px 54px;
+  }
+  @include respond(tablet-large) {
+    max-width: 678px;
+    padding: 90px 32px 71px 38px;
+  }
+  @include respond(tablet-mini) {
+    max-width: 589px;
+    padding: 90px 28px 71px 30px;
+  }
+  @include respond(tablet-port) {
+    max-width: 559px;
+    padding: 90px 4px 71px 15px;
+    margin: 160px 22px;
+  }
+  @include respond(phone-min) {
+    padding: 90px 1px 71px 1px;
+  }
+  @include respond(small-phone) {
+    padding: 90px 88px 71px 75px;
+  }
 }
 
 .flex-wrap {
@@ -109,6 +151,14 @@ a.earphones {
   flex-wrap: wrap;
   gap: 10%;
   margin-bottom: 4.4rem;
+
+  @include respond(tablet) {
+    gap: 4%;
+  }
+
+  @include respond(phone-min) {
+    gap: 1%;
+  }
 }
 
 .middle {
@@ -126,6 +176,13 @@ a.earphones {
   padding: 12px;
   margin-bottom: 1.4rem;
   margin-top: 0.8rem;
+
+  @include respond(tablet) {
+    width: 98%;
+  }
+  @include respond(phone-min) {
+    width: 80%;
+  }
 }
 
 .middle:is(:focus, :valid) {
@@ -134,25 +191,58 @@ a.earphones {
 
 .full {
   max-width: 615px;
+
+  @include respond(tablet) {
+    max-width: 507px;
+  }
+  @include respond(phone-min) {
+    max-width: 453px;
+  }
 }
 
 .emoney-information-details {
   display: flex;
   gap: 20%;
+
+  @include respond(tablet) {
+    gap: 8%;
+  }
+  @include respond(smaller-screen) {
+    flex-direction: column;
+  }
 }
 
 .payment-wrap {
   display: flex;
   gap: 34%;
+
+  @include respond(tablet) {
+    gap: 26%;
+  }
+  @include respond(small-phone) {
+    gap: 7%;
+  }
+  @include respond(smaller-screen) {
+    flex-direction: column;
+  }
 }
 
 .payment-method-box {
   position: relative;
   left: 32px;
+
+  @include respond(smaller-screen) {
+    margin-bottom: 1.4rem;
+    left: -11px;
+  }
 }
 
 .payment-h3 {
   color: black;
+
+  @include respond(smaller-screen) {
+    margin-bottom: 1.2rem;
+  }
 }
 
 input[type="radio"] {
@@ -170,6 +260,16 @@ label.radio {
   width: 275px;
   cursor: pointer;
   color: black;
+
+  @include respond(tablet) {
+    width: 239px;
+  }
+  @include respond(phone-min) {
+    width: 205px;
+  }
+  @include respond(small-phone) {
+    width: 179px;
+  }
 }
 
 label.radio::before {
@@ -250,12 +350,4 @@ input[type="radio"]:checked + label.radio::after {
   width: 100%;
   font-size: 1.2rem;
   padding-top: 3.4rem;
-}
-
-.summary {
-  width: 100%;
-  max-width: 467px;
-  position: absolute;
-  top: 42%;
-  left: 63%;
 }

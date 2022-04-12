@@ -1,0 +1,98 @@
+.screen1_menu_items {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.screen1_menu_btn {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+
+  @include respond(tab-port-mini) {
+    display: flex;
+  }
+}
+
+.screen1_menu_hamburger {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 5px;
+  z-index: 10;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.screen1_menu_hamburger::before,
+.screen1_menu_hamburger::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.screen1_menu_hamburger::before {
+  transform: translateY(-6px);
+}
+.screen1_menu_hamburger::after {
+  transform: translateY(6px);
+}
+
+.screen1_menu_items {
+  background: black;
+  color: #fff;
+  position: absolute;
+  left: -73%;
+  height: 50vh;
+  width: 41%;
+  border-radius: 7px;
+  padding-top: 70px;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+
+  @include respond(tablet-port) {
+    width: 60%;
+    height: 100vh;
+  }
+}
+
+.screen1_menu_items li {
+  padding: 10px 0;
+  text-align: center;
+  list-style-type: none;
+  transition: all 0.2s ease;
+}
+
+.screen1_menu_items li:hover {
+  letter-spacing: 2px;
+  opacity: 6;
+}
+
+.screen1_menu_btn input:checked ~ .screen1_menu_hamburger {
+  transform: translateX(-50px);
+  background: transparent;
+}
+
+.screen1_menu_btn input:checked ~ .screen1_menu_hamburger::before {
+  transform: rotate(45deg) translate(37px, -35px);
+}
+
+.screen1_menu_btn input:checked ~ .screen1_menu_hamburger::after {
+  transform: rotate(-45deg) translate(34px, 36px);
+}
+
+.screen1_menu_btn input:checked ~ .screen1_menu_items {
+  left: -1%;
+}
+
+.screen1_menu_btn input {
+  display: none;
+  position: absolute;
+  left: 13px;
+}
