@@ -48,7 +48,7 @@
   background: black;
   color: #fff;
   position: absolute;
-  left: -73%;
+  left: -101%;
   height: 50vh;
   width: 41%;
   border-radius: 7px;
@@ -57,7 +57,7 @@
   transition: all 0.5s ease-in-out;
 
   @include respond(tablet-port) {
-    width: 60%;
+    width: 90%;
     height: 100vh;
   }
 }
@@ -88,7 +88,7 @@
 }
 
 .screen1_menu_btn input:checked ~ .screen1_menu_items {
-  left: -1%;
+  left: -13%;
 }
 
 .screen1_menu_btn input {

@@ -95,16 +95,24 @@
     max-width: 25%;
   }
   @include respond(phone) {
-    margin-left: 240px;
-    max-width: 37%;
+    margin-left: 231px;
+    max-width: 41%;
   }
   @include respond(small-phone) {
-    margin-left: 261px;
-    max-width: 37%;
+    margin-left: 268px;
+    max-width: 36%;
   }
   @include respond(small-screen) {
-    margin-left: 243px;
-    max-width: 39%;
+    margin-left: 231px;
+    max-width: 40%;
+  }
+  @include respond(smaller-screen) {
+    margin-left: 238px;
+    max-width: 40%;
+  }
+  @include respond(smaller-phones) {
+    margin-left: 206px;
+    max-width: 45%;
   }
 }
 

@@ -76,6 +76,9 @@
   @include respond(small-screen) {
     left: 232px;
   }
+  @include respond(smaller-phones) {
+    left: 203px;
+  }
 }
 .plus:hover {
   color: #d87d4a;
@@ -91,7 +94,10 @@
     right: -105px;
   }
   @include respond(small-screen) {
-    right: -93px;
+    right: -83px;
+  }
+  @include respond(smaller-phones) {
+    right: -43px;
   }
 }
 .minus:hover {

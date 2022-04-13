@@ -78,6 +78,23 @@ body {
   cursor: pointer;
   margin-left: 167px;
   z-index: 10;
+  position: relative;
+}
+@media only screen and (max-width: 450px) {
+  .chart {
+    margin-left: 133px;
+  }
+}
+
+.chart-no {
+  color: #e77e43;
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: absolute;
+  top: -10px;
+  left: 17px;
+  z-index: 10;
+  width: 10%;
 }
 
 .chart-box {
@@ -1626,20 +1643,32 @@ img.new-product-img {
 }
 @media only screen and (max-width: 600px) {
   .link-add-to-cart {
-    margin-left: 240px;
-    max-width: 37%;
+    margin-left: 231px;
+    max-width: 41%;
   }
 }
 @media only screen and (max-width: 500px) {
   .link-add-to-cart {
-    margin-left: 261px;
-    max-width: 37%;
+    margin-left: 268px;
+    max-width: 36%;
   }
 }
 @media only screen and (max-width: 450px) {
   .link-add-to-cart {
-    margin-left: 243px;
-    max-width: 39%;
+    margin-left: 231px;
+    max-width: 40%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .link-add-to-cart {
+    margin-left: 238px;
+    max-width: 40%;
+  }
+}
+@media only screen and (max-width: 363px) {
+  .link-add-to-cart {
+    margin-left: 206px;
+    max-width: 45%;
   }
 }
 
@@ -1748,6 +1777,11 @@ img.new-product-img {
     left: 232px;
   }
 }
+@media only screen and (max-width: 363px) {
+  .plus {
+    left: 203px;
+  }
+}
 
 .plus:hover {
   color: #d87d4a;
@@ -1769,7 +1803,12 @@ img.new-product-img {
 }
 @media only screen and (max-width: 450px) {
   .minus {
-    right: -93px;
+    right: -83px;
+  }
+}
+@media only screen and (max-width: 363px) {
+  .minus {
+    right: -43px;
   }
 }
 
@@ -2525,7 +2564,7 @@ path:hover {
   background: black;
   color: #fff;
   position: absolute;
-  left: -73%;
+  left: -101%;
   height: 50vh;
   width: 41%;
   border-radius: 7px;
@@ -2535,7 +2574,7 @@ path:hover {
 }
 @media only screen and (max-width: 700px) {
   .screen1_menu_items {
-    width: 60%;
+    width: 90%;
     height: 100vh;
   }
 }
@@ -2566,7 +2605,7 @@ path:hover {
 }
 
 .screen1_menu_btn input:checked ~ .screen1_menu_items {
-  left: -1%;
+  left: -13%;
 }
 
 .screen1_menu_btn input {
