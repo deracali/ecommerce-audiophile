@@ -56,9 +56,9 @@ let openChart = function () {
   chartNo.classList.remove("active");
 };
 
-for (const carts of cart) {
-  carts.addEventListener("click", () => {
-    cartNumbers();
+for (let i = 0; i < cart.length; i++) {
+  cart[i].addEventListener("click", () => {
+    cartNumbers(products[i]);
     openChart();
   });
 }
@@ -71,7 +71,8 @@ function onloadCartNumbers() {
   }
 }
 
-function cartNumbers() {
+function cartNumbers(product) {
+  console.log("this in my", product);
   let productNumbers = localStorage.getItem("cartNumbers");
   productNumbers = parseInt(productNumbers);
 
